@@ -52,4 +52,5 @@ void menuTransgerbeur() {
 	c2.cont = cont1;
 	tabCasier[0] = c1;
 	tabCasier[2] = c2;
+
 }
