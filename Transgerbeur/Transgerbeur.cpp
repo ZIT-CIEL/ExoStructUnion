@@ -57,7 +57,12 @@ void menuTransgerbeur() {
 	c2.cont = cont1;
 	tabCasier[0] = c1;
 	tabCasier[2] = c2;
-	cout << endl << " la taille est de : " <<  sizeof(ro1);
+	
+	cout << endl << " la taille EETAt est de  : " << sizeof(EEtat);
+	cout << endl << " la taille  SPALETE est de : " << sizeof(SPalette);
+	cout << endl << " la taille SROUleauest de : " << sizeof(SRouleau);
+	cout << endl << " la taille  Ucontenu est de : " << sizeof(UContenu);
+	cout << endl << " la taille SCasier  est de : " << sizeof(SCasier);
 }
 int main() {
 	menuTransgerbeur(); // Call the menu function
