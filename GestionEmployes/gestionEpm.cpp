@@ -28,12 +28,7 @@ struct Employer {
 
     char nom; 
     char prrenom; 
-    int date_embouche; 
-    int date_fonction; 
-
-
-
-
-
+    date  date_embouche; 
+    date  date_fonction; 
 
 };
