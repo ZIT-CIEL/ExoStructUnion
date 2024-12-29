@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<iostream>
-
+#include <string.h>
 using namespace std;
 struct date {
 
@@ -26,9 +26,25 @@ bool verifierDate(date d) {
 }
 struct Employer {
 
-    char nom; 
-    char prrenom; 
+    string nom;
+    string  prenom;
+
     date  date_embouche; 
     date  date_fonction; 
 
 };
+int main() {
+
+    Employer emp1 ; 
+    emp1.prenom = "fedi";
+    emp1.nom = "zitouni";
+    // Affichage
+    cout << "prenom : " << emp1.prenom << endl;
+    cout << "nom : " << emp1.nom << endl;
+    return 0;
+
+
+
+
+    
+}
