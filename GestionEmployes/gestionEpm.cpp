@@ -33,9 +33,43 @@ struct Employer {
     date  date_fonction; 
 
 };
+
+date saisirDate() {
+    date d;
+    cout << "Saisir le jour : ";
+    cin >> d.jour;
+
+    cout << "Saisir le mois : ";
+    cin >> d.mois;
+
+    cout << "Saisir l'annee : ";
+    cin >> d.annee;
+}
+void saisiemployer() {
+    Employer em; 
+    cout << "entrer votre nom :"<< endl;
+    cin >> em.nom; 
+    cout << "entrer votre prenom :" << endl;
+    cin >> em.prenom; 
+    cout << "entrer votre date d'embouche :" << endl;
+    em.date_embouche = saisirDate();
+    cout << "entrer votre date de fonction  :" << endl;
+    em.date_fonction = saisirDate(); 
+}
+void affichage(Employer emp) {
+
+    cout << " le nom est :" << emp.nom;
+    cout << " le prenom est :" << emp.prenom;
+    cout << "date d'embouche :" << emp.date_embouche.jour;
+    cout << "date d'embouche :" << emp.date_embouche.mois;
+    cout << "date d'embouche :" << emp.date_embouche.annee;
+    cout << "date de focntion :" << emp.date_fonction.jour;
+    cout << "date de focntion :" << emp.date_fonction.mois;
+    cout << "date de focntion :" << emp.date_fonction.annee;
+}
 int main() {
 
-    Employer emp1 ; 
+    Employer emp1;
     emp1.prenom = "fedi";
     emp1.nom = "zitouni";
     // Affichage
@@ -46,5 +80,5 @@ int main() {
 
 
 
-    
+
 }
