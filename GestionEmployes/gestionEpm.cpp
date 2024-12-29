@@ -24,3 +24,16 @@ bool verifierDate(date d) {
     }
     return true;
 }
+struct Employer {
+
+    char nom; 
+    char prrenom; 
+    int date_embouche; 
+    int date_fonction; 
+
+
+
+
+
+
+};
