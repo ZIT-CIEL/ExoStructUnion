@@ -44,8 +44,9 @@ date saisirDate() {
 
     cout << "Saisir l'annee : ";
     cin >> d.annee;
+    return d;
 }
-void saisiemployer() {
+Employer saisiemployer() {
     Employer em; 
     cout << "entrer votre nom :"<< endl;
     cin >> em.nom; 
@@ -55,27 +56,24 @@ void saisiemployer() {
     em.date_embouche = saisirDate();
     cout << "entrer votre date de fonction  :" << endl;
     em.date_fonction = saisirDate(); 
+    return em; 
 }
 void affichage(Employer emp) {
 
-    cout << " le nom est :" << emp.nom;
+    cout << " le nom est :" << emp.nom ;
     cout << " le prenom est :" << emp.prenom;
-    cout << "date d'embouche :" << emp.date_embouche.jour;
-    cout << "date d'embouche :" << emp.date_embouche.mois;
-    cout << "date d'embouche :" << emp.date_embouche.annee;
-    cout << "date de focntion :" << emp.date_fonction.jour;
-    cout << "date de focntion :" << emp.date_fonction.mois;
-    cout << "date de focntion :" << emp.date_fonction.annee;
+    cout << " jour demboche :" << emp.date_embouche.jour;
+    cout << " mois d'embouche :" << emp.date_embouche.mois;
+    cout << " annee d'embouche :" << emp.date_embouche.annee;
+    cout << " jour de focntion :" << emp.date_fonction.jour;
+    cout << " mois de focntion :" << emp.date_fonction.mois;
+    cout << " annee de focntion :" << emp.date_fonction.annee;
 }
 int main() {
 
-    Employer emp1;
-    emp1.prenom = "fedi";
-    emp1.nom = "zitouni";
-    // Affichage
-    cout << "prenom : " << emp1.prenom << endl;
-    cout << "nom : " << emp1.nom << endl;
-    return 0;
+    Employer emp1=saisiemployer();
+    
+    affichage(emp1);
 
 
 
